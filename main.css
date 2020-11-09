@@ -129,7 +129,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			body, input, select, textarea {
-				font-size: 11pt;
+				font-size: 9pt;
 				letter-spacing: 0.0375em;
 			}
 
