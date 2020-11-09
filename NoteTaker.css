@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+
+* {
+	box-sizing: border-box; /* keep content within the page horizontally*/
+	font-family: 'Original Surfer', cursive;
+	background-color: #673ab7;
+	text-align: center;
+}
+
+body {
+	padding: 0;
+	margin: 0; 
+}
+
+#info {
+	font-size: 12px;
+	text-align: left;
+	padding: 2px;
+	background-color: #e7f3fe;
+	border-left: 10px solid #2196F3;
+	width: 100%;
+	margin: 0;
+}
+
+p, strong {
+	background-color: inherit;
+	display: flex;
+
+}
+
+button, .close {
+    margin-bottom: 15px;
+    background-color: #fff65d;
+    border-radius: 80px;
+    color: #673ab7;
+    border:none;
+	cursor: pointer;
+	font: icon;
+}
+
+#wrapper-notes {
+	display: grid;
+	grid-column: auto;
+	grid-row: auto;
+	grid-gap: 20px; /*shorthand property for the grid-row-gap and the grid-column-gap properties*/
+}
+
+#all-notes {
+	display: flex; /*displays content across page*/
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+
+#single-note {
+	cursor: pointer;
+	background-color: #fff65d;
+	margin: 0 10px 20px;
+	width: 200px;
+	height: 200px;
+	border-radius: 8px;
+	transition: all 2s;
+}
+
+
+#close-button, .close {
+    cursor: pointer;
+    border-radius: 0;
+    margin-bottom:30px;
+    background-color: inherit;
+    float: right;
+    border: none;
+    line-height: 20px;
+    font-weight: bolder;
+
+}
+
+div#title {
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: inherit;
+    font-weight: lighter;
+    line-height: 40px;
+}
+
+div#main-text {
+	font-size: 12px;
+	background-color: inherit;
+	text-align: left;
+	margin-left: 10px;
+	position: absolute;
+}
+
+
+

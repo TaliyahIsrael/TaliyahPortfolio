@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+	<head>
+		<title>Memory game</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Memory Game">
+		<meta name="keywords" content="HTML, CSS, JavaScript"> <!--keywords for search engine-->
+		<meta name="author" content="Taliyah Israel - 13 OCT 2020"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="memorygame.css">
+		<script type="text/javascript" src="memorygame.js" async=""></script>
+
+		<link rel="icon" type="image/png" href="memory.jpg"/> <!--Favicon-->
+	</head>
+	<body>
+		<h1>Memory Game</h1>
+		<p>Match up the correct colours together to win the game!</p>
+
+		<div class="game-info-container">
+			<div class="game-info">
+				Time: <span id="time-left">75 seconds total...</span>
+			</div>
+			<div class="game-info">
+				Matches: <span id="match">0</span>
+			</div>
+			<div class="game-info">
+				Flips: <span id="flips">0</span>
+			</div>
+		</div>
+
+		<p id="winner">Congratulations! YOU WIN!</p>
+
+		<section class="grid-container">
+
+				<div data-color="red" class="card red cardback" onclick="flipCard(event)">1</div>
+				<div data-color="pink" class="card pink cardback" onclick="flipCard(event)">2</div>
+				<div data-color="green" class="card green cardback" onclick="flipCard(event)">3</div>
+				<div data-color="blue" class="card blue cardback" onclick="flipCard(event)">4</div>
+		
+		
+				<div data-color="yellow" class="card yellow cardback" onclick="flipCard(event)">5</div>
+				<div data-color="black" class="card black cardback" onclick="flipCard(event)">6</div>
+				<div data-color="orange" class="card orange cardback" onclick="flipCard(event)">7</div>
+				<div data-color="pink" class="card pink cardback" onclick="flipCard(event)">8</div>
+
+			
+				<div data-color="orange" class="card orange cardback" onclick="flipCard(event)">9</div>
+				<div data-color="blue" class="card blue cardback" onclick="flipCard(event)">10</div>
+				<div data-color="black" class="card black cardback" onclick="flipCard(event)">11</div>
+				<div data-color="purple" class="card purple cardback" onclick="flipCard(event)">12</div>
+			
+
+				<div data-color="green" class="card green cardback" onclick="flipCard(event)">13</div>
+				<div data-color="red" class="card red cardback" onclick="flipCard(event)">14</div>
+				<div data-color="purple" class="card purple cardback" onclick="flipCard(event)">15</div>
+				<div data-color="yellow" class="card yellow cardback" onclick="flipCard(event)">16</div>
+
+		</section>
+
+		<footer style="position: absolute; bottom: 0; width: 100%;">
+			<div class="footer">©Taliyah Israel 2020</div>
+		</footer>
+
+	</body>
+</html>			

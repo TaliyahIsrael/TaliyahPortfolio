@@ -1,0 +1,75 @@
+body {
+	text-align: center;
+	background-color: #f9c95a;
+	font-family: 'Arbutus Slab', serif;
+}
+
+img {
+	border: #1e8622 solid 1px;
+	border-radius: 10px;
+}
+
+h1 {
+	color: #1e8622;
+    text-transform: uppercase;
+
+}
+
+li {
+    border-bottom: #1e8622;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    padding-bottom: 10px;
+}
+
+span.close {
+	cursor: pointer;
+	border: 1px solid black;
+	border-radius: 10px;
+    padding: 0px 10px;
+    background-color: #1e8622;
+    border-style: groove;
+    color: #f9c95a;
+}
+
+span.close:hover {
+	background-color: #f9c95a;
+    color:#1e8622;
+}
+
+span#total {
+    color: #1e8622;
+}
+
+input {
+	border: #1e8622 solid 1px;
+	border-radius: 6px;
+    text-transform: capitalize;
+    font-family: 'Arbutus Slab', serif;
+}
+
+input#lastNumber {
+    display: none;
+}
+
+button {
+	border: black solid 1px;
+    border-radius: 6px;
+    padding: 2px 8px;
+    background-color: #1e8622;
+    border-style: groove;
+    color: #f9c95a;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #f9c95a;
+    color:#1e8622;
+}
+
+
+#print { 
+    margin-top: 20px;
+}

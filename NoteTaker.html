@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<title>Note Taker</title>
+	<meta charset="utf-8">
+	<meta name="description" content="note taker app">
+	<meta name="keywords" content="HTML, CSS, JavaScript"> <!--keywords for search engine-->
+	<meta name="author" content="Taliyah Israel - 08 OCT 2020"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="NoteTaker.css">
+	<script type="text/javascript" src="NoteTaker.js"></script>
+
+	<link rel="icon" type="image/png" href="notepad.png"/> <!--Favicon-->
+
+</head>
+<body>
+	<h1>Note Taker App</h1>
+
+	<div id="info">
+		<p> <strong>Info! *</strong>Click on the desired note once added to edit or click the (x) buttton to delete it.</p>
+	</div>
+	<h6>Click on note to edit the note title and the note text as you wish :)</h6>
+	<button onclick="addButton()" type="text" id="add-button">Click me to add note</button>
+
+
+	
+	
+
+
+
+	<div id="wrapper-notes">
+		<div id="all-notes">
+			<div id="single-note">
+				<button onclick="closeButton()" id="close-button">(x)</button>
+				<div id="title" contenteditable="true">Title</div>
+				<div id="main-text" contenteditable="true">noteText</div>
+			</div>
+		
+		</div>
+	</div>
+
+
+
+	<footer style="position: fixed; bottom: 0; width: 100%;">
+		<div>&copy;Taliyah Israel 2020</div>
+	</footer>
+</body>
+</html>

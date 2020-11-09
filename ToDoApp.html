@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<title>To Do App</title>
+			<meta charset="utf-8">
+			<meta name="description" content="to-do list app">
+			<meta name="keywords" content="HTML, CSS, JavaScript"> <!--keywords for search engine-->
+			<meta name="author" content="Taliyah Israel - 30 SEP 2020"> 
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" type="text/css" href="ToDoApp.css">
+			<script src="ToDoApp.js" type="text/javascript" async></script>
+
+			<link href="https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap" rel="stylesheet"> <!--imported font family--> 
+		</head>
+
+		<body>
+			<h1>TO-DO LIST</h1>
+			<!--<p>write all your to do's in the input and click the add  button to display below:</p>-->
+			<p>Complete these following tasks:</p>
+
+			<form onSubmit="return false;"> <!-- stop reload of page when enter button pressed-->
+				<input id="userInput" type="text" name="inputlist" placeholder="Enter your to do's here:" required="true" accesskey="Enter" maxlength="30" minlength="4" autocomplete="off">
+				<span onclick="newElement()" class="addBtn">+</span>
+				<!--<button type="button" onclick="addButton()">Add</button>
+				<button type="button" onclick="editButton()">Edit</button>
+				<button type="button" onclick="deleteButton()">Delete</button>-->
+			</form>
+
+			<div>
+				<ul id="theUL"></ul>
+			</div>
+
+			<footer style="position: fixed; bottom: 0; width: 100%;">
+				<p>&copy;Taliyah Israel 2020</p>
+			</footer>
+
+		</body> 
+	</html> 

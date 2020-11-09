@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+
+body {
+	background-color: black;
+	color: #ffc107b5; 
+	font-family: 'Orbitron', sans-serif;
+	text-align: center;
+}
+
+h1 {
+	text-transform: uppercase;
+	color: purple;
+	margin-top: 5px;
+}
+
+p#hide {
+	color: #ffc107b5;
+	margin: 0px;
+}
+
+#clock {
+  color: purple;
+  font-size: 120px;
+  text-align: center;
+  padding-top: 40px;
+  background: #ffc107b5;
+  padding-bottom: 40px;
+  border-color: purple;
+  border-style: ridge;
+  border-width: thick;
+  margin-top: 70px;
+  margin-left: 100px;
+  margin-right: 100px;
+  cursor: none;
+}
+
+button {
+  font-family: 'Orbitron', sans-serif;
+	margin: 70px;
+  margin-bottom: 0;
+  border-color: purple;
+  border-style: ridge;
+  border-width: thick;
+  padding: 8px;
+  background: #ffc107b5;
+  cursor: pointer;
+  color: purple;
+  border-radius: 12px;
+  box-shadow: 3px 5px grey;
+}
+
+button:link {
+	color: blue;
+}
+
+button:visited {
+	color: purple;
+}
+
+button:hover {
+  color: black;
+}
+
+button:active {
+  color: red;
+}
+
+canvas {
+	display: none;
+	background-color: #ffc107b5;
+	border-color: purple;
+  border-style: ridge;
+  border-width: thick;
+}
+
+#clock-canvas {
+	cursor: none;
+}
+
+.btn {
+  padding: 10px;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  border-color: purple;
+  border-style: ridge;
+  border-width: thick;
+  background: #ffc107b5;
+  cursor: pointer;
+  color: purple;
+  border-radius: 12px;
+}
+
+
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color: red;
+}

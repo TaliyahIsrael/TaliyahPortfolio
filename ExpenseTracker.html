@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<title></title>
+			<meta charset="utf-8">
+			<meta name="description" content="expense tracker app">
+			<meta name="keywords" content="HTML, CSS, JavaScript"> <!--keywords for search engine-->
+			<meta name="author" content="Taliyah Israel - 04 OCT 2020"> 
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<link rel="stylesheet" type="text/css" href="ExpenseTracker.css">
+			<script type="text/javascript" src="ExpenseTracker.js"></script>
+
+			<link rel="icon" type="image/png" href="moneyicon.png"/> <!--Favicon-->
+
+			<link href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap" rel="stylesheet"> <!-- font -->
+		</head>
+
+		<body>
+			<img src="bills.jpg" width="150px" height="170px">
+			<h1>£xp£ns£ Track£r</h1>
+			<p>This is your very own expense tracker. Keep a track of all your expenses here:</p>
+
+			<div>
+				<span>Expense Total (£):</span>
+				<span type="number "id="total"></span>
+				<br>
+				<button onclick="window.print()" id="print">Print this page</button>
+			</div>	 
+			
+			<hr>
+
+			<form>
+				<input type="number" name="" value="0" id= lastNumber required>
+
+				<label>Expense:</label>
+				<input type="text" name="Expense" placeholder="Enter expense here" id="new item" autocomplete="off" autofocus required>
+
+				<label>Date:</label>
+				<input style="text-transform: uppercase;" type="date" name="Date" id="new item 2" size="8" autocomplete="off" required>
+
+				<label>Amount:</label>
+				<input type="number" name="Amount" placeholder="£0.00" id="new item 3" step=".01" autocomplete="off" required>
+
+				<button type="submit" onclick="runit();return false">+</button> <!--the ;return false stops page from refreshing at the end when function is run-->
+			</form>
+
+			<ol id="tableinfo"></ol>
+
+			<footer style="position: fixed; bottom: 0; width: 100%;">
+				<p>&copy;Taliyah Israel 2020</p>
+			</footer>
+
+		</body>
+	</html>
+

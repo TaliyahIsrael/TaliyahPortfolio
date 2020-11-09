@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Digital/Analogue Clock</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Time/Clocks">
+		<meta name="keywords" content="HTML, CSS, JavaScript"> 
+		<meta name="author" content="Taliyah Israel  - 15 SEP 2020"> 
+		<!--<meta http-equiv="refresh" content="30"> refresh doc every 30 sec-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="Clock.css">
+		<script src="Clock.js" async></script>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--icon libary-->
+	</head>
+
+	<body>
+		<h1>This is the <br>current <br>time!</h1>
+		<p id="hide">This is a 24 hour digital clock.</p>
+		<p id="div1"></p>
+		<div id="clock" tooltip="Digital Clock"></div>
+	
+		<canvas id="clock-canvas" width="450" height="450"></canvas>
+
+		<button id= "change" onclick="clockchange()">Click to 'Switch Clock Type'</button>
+
+		<a class="btn" href=Clock.html><i class="fa fa-home"></i></a>
+
+		<footer style="position: fixed; bottom: 0; width: 100%;">
+		<p>&copy;Taliyah Israel 2020</p>
+		</footer> 
+	</body>
+</html>

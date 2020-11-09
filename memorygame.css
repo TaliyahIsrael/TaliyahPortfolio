@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+* {
+	box-sizing: border-box; /* keep content within the page horizontally*/
+	font-family: 'Architects Daughter', cursive;
+	margin-top: 0;
+}
+
+html {
+	min-height: 100vh; /*keeps the backgrounnd color on the back blend smoothly vertitally not horizontial per element*/
+}
+
+body { 
+	height: 100vh; /*body takes up 100% view height of page */
+	background: radial-gradient(#3F51B5, #9C27B0); /* two colors mixed */
+	text-align: center; 
+	margin: 0;
+	padding: 0;
+}
+
+h1, p {
+	margin-bottom: 10px;
+}
+
+button {
+    margin-top: 12px;
+    padding: 6px;
+    border: black solid 3px;
+    border-radius: 10px;
+    background-color: #673ab7; 
+    border-style: ridge;
+    font-size: 16px;
+}
+
+button:hover {
+	box-shadow: inset 0 0 8px 4px #2196F3;
+}
+
+p#winner {
+	font-size: x-large;
+    font-weight: bolder;
+    padding: 0;
+    visibility: hidden;
+}
+
+.game-info-container {
+	grid-column: 1 /-1; /* this will allow the text to take up first row only and not mix with grid cards created */
+	display: flex; /*display content horizontially across the page */
+	justify-content: space-between;  /*puts space between differnt text */
+	cursor: default;
+}
+
+
+.game-info {
+	flex: auto; /*bring text positioning more centre into the page and not large space betwneen them */
+	font-weight: 600;
+}
+
+.grid-container {
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: repeat(4, 0.1fr); /*shorthand so you do have to write 150px 4 times - also using .1fr allows to be repsonsive and not fixed on page*/
+
+	place-content: center;
+	margin-top: 20px;
+	perspective: 1000px; /*to create 3D effect add this perspective to container*/
+}
+
+.card {
+    border: black solid 3px;
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    height: 100px;
+
+    transform-style: preserve-3d; /*put each card 3D into perspective container created*/
+    transition: 0.5s; /*this transistion allows the apperance of the card to seem as it has flip flip*/  
+   
+}
+
+.card:hover {
+	/*box-shadow: -4px 2px 5px 5px #2196F3;
+	transform: rotateY(180deg);*/
+	box-shadow: inset 0 0 8px 4px #2196F3;
+}
+
+
+.cardback {
+	background-image: url(cardback.jpg);
+	transition: 0.8s; /*speed of transistion*/
+	transform: rotateY(360deg); /*card needs to do 360deg instead of 180deg as text will appear as mirrored from start*/
+}
+
+/*when matches are found to show user not to click on this card*/
+.card.done {
+	cursor: default;
+}
+
+.card.done:hover {
+	cursor: default;
+	box-shadow: none;
+}
+
+
+/*COLORS*/
+
+.red {
+	background-color: red;	
+}
+
+.pink {
+	background-color: deeppink;
+}
+
+.green {
+	background-color: green;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.black {
+	background-color: black;
+}
+
+.orange {
+	background-color: orange;
+}
+
+.purple {
+	background-color: purple;
+}
+

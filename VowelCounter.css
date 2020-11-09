@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+
+* {
+	text-align: center;
+	margin: 0; /*keep everything on page - stops having to scroll */
+	padding: 0;
+	font-family: 'Cinzel', serif;
+}
+
+html {
+	min-height: 100vh; /*keeps the backgrounnd color on the back blend smoothly vertitally not horizontial per element*/
+}
+
+body { 
+	height: 100vh; /*body takes up 100% view height of page */
+	background: radial-gradient(#ffffff, #03A9F4)
+}
+
+img {
+	border-radius: 20px;
+    border: 18px solid #03A9F4;
+    padding: 20px;
+    margin: 10px;
+    transition: 5s;
+    transform: rotateY(3600deg);
+    cursor: none;
+}
+
+textarea {
+	margin: 0px;
+    width: 282px;
+    height: 77px;
+    padding: 8px;
+    font-family: serif;
+    text-align: left;
+}
+
+.button {
+	padding: 6px;
+	border: 4px solid #03A9F4;
+	border-radius: 10px;
+}
+
+.button:hover {
+	background-color: #03A9F4;
+	border: 4px solid #ffffff;
+	cursor: pointer;
+}
+

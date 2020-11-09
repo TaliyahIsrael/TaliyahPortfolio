@@ -1,0 +1,113 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	text-align: center; 
+	font-family: 'The Girl Next Door', cursive;
+    /*font-family: Arial;*/
+    background-image: url("notepad.jpg");
+    /*background-position: top;*/
+    background-size: 650px;
+}
+
+
+h1 {
+    margin-top: 100px;
+    padding-bottom: 0px;
+    color: #9c27b0;
+}
+
+ul {
+	padding: 0px;
+}
+
+li{
+	margin-left: 500px;
+    width: 200px;
+}
+
+ul li {
+	cursor: pointer;
+	position: relative;
+	font-size: 15px;
+	background-color: #9c27b0c4;
+	padding: 10px;
+	transition: 1s;
+	
+	list-style-type: none;
+	margin: 50;
+
+
+/* make the list items unselectable */
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #bdb4b0;
+}
+
+input {
+	border-width: medium;
+    border-style: solid;
+    border-color:#9c27b0;
+}
+
+p {
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	text-decoration: underline #9c27b0;
+
+
+}
+
+span.close {
+    text-decoration: underline #9c27b0;
+    text-underline-position: under;
+    position: absolute;
+	right: 0;
+	top: 0;
+	padding: 10px;
+}
+
+span.close:hover {
+	background-color: #9c27b0; 
+	text-decoration: underline white;
+    text-underline-position: under;
+}
+ 
+.addBtn {
+	text-decoration: underline #9c27b0;
+	margin-left: 20px;
+	border-width: medium;
+    border-style: solid;
+	border-color: #9c27b0;
+	padding: 0px 8px;
+
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #888;
+  color: #9c27b0;
+  text-decoration: line-through
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #9c27b0;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 10px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
