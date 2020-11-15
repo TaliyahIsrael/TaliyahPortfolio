@@ -2801,7 +2801,7 @@ input, select, textarea {
 .html {width: 80%; background-color: #2e3842;} /* Green */
 .css {width: 85%; background-color: #2e3842;} /* Blue */
 .js {width: 50%; background-color: #2e3842;} /* Red */
-.jquery {width: 5%; background-color: #2e3842;}
+.jquery {width: 45%; background-color: #2e3842;}
 .bootstrap {width: 5%; background-color: #2e3842;}
 .wordpress {width: 5%; background-color: #2e3842;}
 .php {width: 5%; background-color: #2e3842;} /* Dark Grey */
