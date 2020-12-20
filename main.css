@@ -2798,16 +2798,16 @@ input, select, textarea {
   color: white; /* White text color */
 }
 
-.html {width: 80%; background-color: #2e3842;} /* Green */
+.html {width: 90%; background-color: #2e3842;} /* Green */
 .css {width: 85%; background-color: #2e3842;} /* Blue */
-.js {width: 50%; background-color: #2e3842;} /* Red */
-.jquery {width: 45%; background-color: #2e3842;}
+.js {width: 80%; background-color: #2e3842;} /* Red */
+.jquery {width: 75%; background-color: #2e3842;}
 .bootstrap {width: 5%; background-color: #2e3842;}
 .wordpress {width: 5%; background-color: #2e3842;}
 .php {width: 5%; background-color: #2e3842;} /* Dark Grey */
 .mysql {width: 5%; background-color: #2e3842;}
 .api {width: 5%; background-color: #2e3842;}
-.python {width: 8%; background-color: #2e3842;}
+.python {width: 5%; background-color: #2e3842;}
 
 label {
 	text-align: left;
