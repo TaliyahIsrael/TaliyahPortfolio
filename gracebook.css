@@ -1,0 +1,172 @@
+/* Overall Webpage settting*/
+body {
+  font-family: myFirstFont;
+  background-color: hsl(210, 2%, 78%);
+  margin: 0;
+  text-align: center;
+}
+
+
+
+/*navigation settings*/
+#pr {
+	color: hsl(210, 2%, 78%) ; 
+}
+#underline {
+	text-decoration: underline ;
+}
+nav.header {
+	overflow: hidden;
+	background: #0B0C10;
+	padding: 10px 10px 10px 50px;
+}
+
+nav.header a {
+	float: left;
+	color: #45A29E;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 21pt ;
+	line-height: 25px;
+	border-radius: 4px;
+}
+
+nav.header img {
+	float: left;
+	width: 55px;
+	height: 55px;	
+}
+
+nav.header a:hover {
+	background-color: hsl(210, 2%, 78%); 
+  	color: #66FCF1;
+}
+
+#pr:hover {
+	background-color: hsl(210, 2%, 78%); 
+  	color: #66FCF1;
+}
+
+nav.header a:active {
+	background-color: #66FCF1;
+  	color: hsl(210, 2%, 78%);
+}
+
+#pr:active {
+	background-color: #66FCF1;
+  	color: hsl(210, 2%, 78%);
+}
+/*keeps navigation text not being in reverse order*/
+.k {
+	float: right;
+} 
+
+
+
+
+/*slider image and arrows with text */
+/*slider image */
+div.area img.x {
+	border:0;
+	padding: 0;
+    margin: 0px;
+    height:300px;
+}
+
+#z {
+	width: 100%;
+}
+
+.area {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+/*Slider text ... look at button on image to understand transform part*/
+div.area .wsg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 55pt;
+	color: hsl(210, 2%, 78%);
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 0px;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	width: 50px;
+	height:50px;
+	margin-right: 55pt;
+}
+/* Position the "prev button" to the right */
+.prev {
+	left: 0;
+	width: 50px;
+	height: 50px;
+	margin-left: 55pt;
+}
+/* On hover */
+.prev:hover, .next:hover {
+  background-color: hsl(210, 2%, 78%);
+ }
+ /* Active */
+ .prev:active, .next:active {
+ 	background-color: #66FCF1;
+ }
+
+
+
+/*Main Body */
+.area2 {
+	position: relative;
+	font-size: 13pt;
+	text-align: center;
+	margin-left: 55pt;
+  	margin-right: 55pt;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 0;
+  padding: 0;
+}
+
+
+
+/*Email and image section*/
+/*overall section settings  */
+.v {
+	background-color:#0B0C10;
+	color: hsl(210, 2%, 78%);
+	font-size: 21pt;
+	padding: 10px 0px 0px 0px;
+	margin: 0px;
+}
+/*enter email text*/
+.email {
+	color: #45A29E;
+}
+/*email address input field*/
+#email-address {
+	border: 2px solid #45A29E;
+}
+/*3 model images linded up side by side (row) using flex*/
+.row {
+	display: flex;
+}
+/* Create three equal columns that sits next to each other */
+.column > img.x {
+	flex: 33.33%;
+	width: 0%;
+	padding: 20px;
+}

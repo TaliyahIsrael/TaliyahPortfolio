@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Tic Tac Toe</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="TicTacToe">
+		<meta name="keywords" content="HTML, CSS, JavaScript - jQuery"> <!--keywords for search engine-->
+		<meta name="author" content="Taliyah Israel - 08 DEC 2020 - 6 days" >
+
+		<link rel="icon" href=""> <!--favicon-->
+
+		<!-- CSS-->
+		<link rel="stylesheet" type="text/css" href="TicTacToe.css"> 
+
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--Google CDN/Online-->
+		<script src="jquery-3.5.1.min.js"></script> <!--Offline(more space)-->
+
+		<!--GoogleFonts--> 
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
+
+		<style type="text/css"></style>
+		
+	</head>
+	<body>
+
+		<div id="start" class="hover">
+			<p id="drawText" style="display: none;">Draw! <br> The game is now restarting!...</p>
+			<p id="playerOneWinner" style="display: none;"> Player One : 'X' <br> WINS! </p>
+			<p id="playerTwoWinner" style="display: none;"> Player Two : 'O' <br> WINS!</p>
+			<p class="x">Click to proceed into game!</p>
+			<p class="x">Pick your player option</p><br>
+			<button id="gameTypeOne" class="x">2 Players</button>
+			<!--<button id="gameTypeTwo" class="x">Computer</button>-->
+		</div>
+
+		<div id="game-container">
+			<h1>TicTacToe Game</h1>
+
+			<div id="grid">
+				<div class="col-1">
+					<div class="box hover row-1"></div>
+					<div class="box hover row-2"></div>
+					<div class="box hover row-3"></div>
+				</div>
+			
+				<div class="col-2">
+					<div class="box hover row-1"></div>
+					<div class="box hover row-2"></div>
+					<div class="box hover row-3"></div>
+				</div>
+			
+				<div class="col-3">
+					<div class="box hover row-1"></div>
+					<div class="box hover row-2"></div>
+					<div class="box hover row-3"></div>
+				</div>
+			</div>
+
+			<div id="player-container">
+				<div class="player">Player One : X
+				</div>
+				<div class="player">Player Two : O
+				</div>
+				<button id="restart">Restart</button>
+			</div>
+			<div id="clear"></div>
+		</div>
+		
+
+		<footer style="position: fixed; bottom: 0; width: 100%;">
+			<p>&copy;Taliyah Israel 2020</p>
+		</footer>
+
+
+		<!--Javascript-->
+		<script type="text/javascript" src="TicTacToe.js"></script>
+	</body>
+</html>

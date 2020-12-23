@@ -1,0 +1,33 @@
+﻿Colors for GB 
+
+Black: 0B0C10 
+Blue:  rgb(31, 40, 51)
+ Gray: hsl(210, 2, 78)
+ baby blue: 66FCF1
+ Turkoise: 45A29E
+
+
+
+
+Text1:
+GraceBook is not your everyday kind of  Social Media Website. In a world, where everything is controlled, we have made it our Goal to establish a safe zone from the "black and brown" man, woman and kids to socialize, without being put in visage book jail or real jail.
+If victims of all sort have their platforms to discuss the real, without the ones that hurt them being there, why should the most hurt people on this Earth not have it so or better...
+MUCH BETTER
+
+
+
+Text 2:
+Be the first to sign up when we are open for Business.
+Enter your Email Address here:
+
+
+
+
+Text 3:
+©GraceBook 2020
+Margin sizes: 55pt
+ Navigation size: 21pt 
+Slider Heading size: 55pt 
+Normal font size: 13pt
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Lights ON/OFF</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="light switching on and off">
+		<meta name="keywords" content="HTML, CSS, JavaScript - jQuery"> <!--keywords for search engine-->
+		<meta name="author" content="Taliyah Israel -  07 DEC 2020 - 1 days" >
+
+		<link rel="icon" href="lights.jpg"> <!--favicon-->
+
+		<link rel="stylesheet" type="text/css" href="Light switching.css">
+
+		<!--jQuery link-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--Google CDN/Online-->
+		<script src="jquery-3.5.1.min.js"></script> <!--Offline(more space)-->
+
+		<style type="text/css"></style>
+	</head>
+
+	<body>
+		<h1>Light Switch</h1>
+		<h5>Click the switch to turn the light on or turn it off!</h5><br>
+		<!-- Rectangular switch -->
+		<label class="switch"> 
+		  <input type="checkbox">
+		  <span class="slider"></span>
+		</label><br>
+		<!--light-->
+		<img src="light ON.jpg">
+		<img id="light-image" src="light OFF.jpg">
+		<audio id="audio">
+			<source src="Light Switch Sound Effect.mp3" type="audio/mpeg">
+		</audio>
+
+		<footer style="position: fixed; bottom: 0; width: 100%; text-align: center;">
+			<p>&copy;Taliyah Israel 2020</p>
+		</footer>
+
+		<script type="text/javascript" src="Light switching.js"></script>
+	</body>
+</html>
