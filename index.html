@@ -19,6 +19,33 @@
 		<link rel="icon" href="logo.JPG">
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<style type="text/css">
+			/* Style tab links */
+			.tablink {
+			  background-color: #555;
+			  color: white;
+			  float: left;
+			  border: none;
+			  outline: none;
+			  cursor: pointer;
+			  padding: 14px 16px;
+			  font-size: 17px;
+			  width: 25%;
+			}
+
+			.tablink:hover {
+			  background-color: #777;
+			}
+
+			/* Style the tab content (and add height:100% for full page content) */
+			.tabcontent {
+			  color: white;
+			  display: none;
+			  padding: 100px 20px;
+			  height: 100%;
+			}
+		</style>
 	</head>
 	<body class="landing is-preload">
 
@@ -156,55 +183,97 @@
 								<h2>Portfolio</h2>						
 							</header>
 
-							<ul class="features">
+							<button class="tablink" onclick="openPage('HTML-CSS', this, '#00ffcc')" id="defaultOpen">HTML/CSS</button>
+							<button class="tablink" onclick="openPage('Javascript', this, '#00ffcc')">Javascript</button>
+							<button class="tablink" onclick="openPage('jQuery', this,  '#00ffcc')">jQuery</button>
+							<button class="tablink" onclick="openPage('React', this, '#00ffcc')">React</button>
+
+							<div id="Javascript" class="tabcontent">
+							  <h3>Javascript</h3>
+							  <p>Please view the projects below:</p>
+							  <ul class="features">
 								<li class="icon solid fa-code">
 									<h3>Memory Game</h3>
-									<p>HTML5/CSS3/Javascript</p>
+									<p>HTML/CSS/Javascript</p>
 									<a href="memorygame.html" target="_blank"><button>View</button></a>
 								</li>
 								<li class="icon solid fa-code">
 									<h3>Clock</h3>
-									<p>HTML5/CSS3/Javascript</p>
+									<p>HTML/CSS/Javascript</p>
 									<a href="Clock.html" target="_blank"><button>View</button></a>
 								</li>
 								<li class="icon solid fa-code">
 									<h3>Expense Tracker</h3>
-									<p>HTML5/CSS3/Javascript</p>
+									<p>HTML/CSS/Javascript</p>
 									<a href="ExpenseTracker.html" target="_blank"><button>View</button></a>
 								</li>
 								<li class="icon icon solid fa-code">
 									<h3>Note Taker</h3>
-									<p>HTML5/CSS3/Javascript</p>
+									<p>HTML/CSS/Javascript</p>
 									<a href="NoteTaker.html" target="_blank"><button>View</button></a>
 								</li>
 								<li class="icon solid fa-code">
 									<h3>ToDoApp</h3>
-									<p>HTML5/CSS3/Javascript</p>
+									<p>HTML/CSS/Javascript</p>
 									<a href="ToDoApp.html" target="_blank"><button>View</button></a>
 								</li>
 								<li class="icon solid fa-code">
 									<h3>Vowel Counter</h3>
-									<p>HTML5/CSS3/Javascript</p>
+									<p>HTML/CSS/Javascript</p>
 									<a href="VowelCounter.html" target="_blank"><button>View</button></a>
 								</li>
 							</ul>
-						</div>
+							</div>
+
+							<div id="jQuery" class="tabcontent">
+							  <h3>jQuery</h3>
+							  <p>Please view the projects below:</p>
+							   <ul class="features">
+								<li class="icon solid fa-code">
+									<h3>Turn on the light switch</h3>
+									<p>HTML/CSS/Javascript/jQuery</p>
+									<a href="Light Switching.html" target="_blank"><button>View</button></a>
+								</li>
+								<li class="icon solid fa-code">
+									<h3>Rock Paper Scissors Game</h3>
+									<p>HTML/CSS/Javascript/jQuery</p>
+									<a href="RockPaperScissors.html" target="_blank"><button>View</button></a>
+								</li>
+								<li class="icon solid fa-code">
+									<h3>Tic Tac Toe Game </h3>
+									<p>HTML/CSS/Javascript/jQuery</p>
+									<a href="TicTacToe.html" target="_blank"><button>View</button></a>
+								</li>
+							</div>
+
+							<div id="React" class="tabcontent">
+							  <h3>React</h3>
+							  <p>Coming Soon...</p>
+							</div>
+
+							<div id="HTML-CSS" class="tabcontent">
+							  <h3>HTML/CSS</h3>
+							  <p>Please view the projects below:</p>
+							  <ul class="features">
+								<li class="icon solid fa-code">
+									<h3>BBC News - Technology Page</h3>
+									<p>HTML/CSS</p>
+									<a href="BBC.html" target="_blank"><button>View</button></a>
+								</li>
+								<li class="icon solid fa-code">
+									<h3>Benji Food - Homepage </h3>
+									<p>HTML/CSS</p>
+									<a href="benjifood.html" target="_blank"><button>View</button></a>
+								</li>
+								<li class="icon solid fa-code">
+									<h3>Gracebbok - Homepage </h3>
+									<p>HTML/CSS</p>
+									<a href="gracebook.html" target="_blank"><button>View</button></a>
+								</li>
+							</div>
+
 						<i href="#one" class="more scrolly fas fa-arrow-up cursor" style="font-size: xx-large;"></i>
 					</section>
-
-				<!-- CTA 
-					<section id="cta" class="wrapper style4">
-						<div class="inner">
-							<header>
-								<h2>Arcue ut vel commodo</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
-							</header>
-							<ul class="actions stacked">
-								<li><a href="#" class="button fit primary">Activate</a></li>
-								<li><a href="#" class="button fit">Learn More</a></li>
-							</ul>
-						</div>
-					</section>-->
 
 				<!-- Footer -->
 					<footer id="footer">
@@ -220,8 +289,32 @@
 							<li>Taliyah Israel &copy;2020</li>
 						</ul>
 					</footer>
-
 			</div>
+			<script type="text/javascript">
+				function openPage(pageName, elmnt, color) {
+			  // Hide all elements with class="tabcontent" by default */
+				  var i, tabcontent, tablinks;
+				  tabcontent = document.getElementsByClassName("tabcontent");
+				  for (i = 0; i < tabcontent.length; i++) {
+				    tabcontent[i].style.display = "none";
+				  }
+
+				  // Remove the background color of all tablinks/buttons
+				  tablinks = document.getElementsByClassName("tablink");
+				  for (i = 0; i < tablinks.length; i++) {
+				    tablinks[i].style.backgroundColor = "";
+				  }
+
+				  // Show the specific tab content
+				  document.getElementById(pageName).style.display = "block";
+
+				  // Add the specific color to the button used to open the tab content
+				  elmnt.style.backgroundColor = color;
+				}
+
+				// Get the element with id="defaultOpen" and click on it
+				document.getElementById("defaultOpen").click();
+			</script>
 
 		<!-- Scripts -->
 			<script src="jquery.min.js"></script>
