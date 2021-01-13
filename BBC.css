@@ -1,4 +1,4 @@
-*{
+* {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -6,94 +6,112 @@
 	font-family: ReithSans,Arial,Helvetica,freesans,sans-serif;
 }
 
-.container {
-	display: flex;
-}
 .float-right {
 	float: right;
+	
 }
 
 .float-left {
 	float: left;
-	margin-left: 20px;
-	width: 40%;
+	width: 35%;
 }
 
 .float-clear {
 	clear: both;
 }
 
-#row4col {
-	display: flex;
-}
-
-
 .red {
 	background-color: #bb1919;
 	color: white;
 }
 #sign-in {
-	margin-right : ;
+	margin-right:3px ;
 }
 
-.col {
-	padding-right: 20px;
+#image {
+	width: 250px;
+}
+.articleImage {
+	width: 200px;
+	padding-bottom: 10px;
 
 }
-.grid {
-	display: grid;
-	grid-template-columns: auto auto auto;
-	width: 15%;
-}
 
-.navborder {
-	border-right: #bb1919 1px solid;
-}
 
 form.example input[type=text] {
   padding: 5px;
   font-size: 14px;
-  border: 1px solid grey;
-  float: left;
-  width: 80%;
-  margin-top: 15px;
+  border: 2px solid grey;
+  width: 60%;
+  margin-top: 10px;
   background: #f1f1f1;
 }
 
 form.example button {
-  float: left;
-  width: 20%;
-  padding: 5px;
+  width: 15%;
+  padding: 6px;
   background: #bb1919;
   color: white;
   font-size: 14px;
-  margin-top: 15px;
+  margin-top: 10px;
   border: 1px solid grey;
   border-left: none;
   cursor: pointer;
-  z-index: 2;
 }
 
 li {
-	margin: 20px;
-	font-size: 14px;
-	margin-bottom: 0;
+	margin: 15px;
+	font-size: 14px
 
 }
 
-h3 {
+.button:hover {
+	cursor: pointer;
+	text-decoration: underline white 3px;
+	text-underline-position: below;
+	text-underline-offset: 5px ;
+}
+
+.news {
 	padding-left: 20px;
-	font-size: 40px;
+	font-size: 35px;
+	font-weight:lighter;
+	letter-spacing: 3px;
 }
 
 h4 {
-	padding: 20px;
-    font-size: 18px;
-    color: grey;
-    text-decoration: underline;
-    text-decoration-color: red;
+	padding: 10px;
+	color: darkslategrey;
+	text-decoration: underline;
+	text-decoration-color: red;
 }
+
 
 a {
 	font-size: 35px;
+}
+
+/*The font family for the icons used need to be specified as font awesome here as you had a different font family for your page*/
+i {
+	font-family: "FontAwesome";
+}
+
+@media only screen and (max-width: 960px) {
+ .break {
+	 clear: both;
+ }
+
+ div.float-left {
+	 width: 100%;
+ }
+
+ #image {
+	width: 280px;
+}
+.articleImage {
+	width: 240px;
+	padding-bottom: 10px;
+
+}
+
 }
