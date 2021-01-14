@@ -24,6 +24,7 @@ img {
     transition: 5s;
     transform: rotateY(3600deg);
     cursor: none;
+	width: 60%;
 }
 
 textarea {
