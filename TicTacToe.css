@@ -14,16 +14,14 @@ body {
 	position: fixed;
 	margin-left: 12%;
 	margin-top: 5%;
-	height: 65%;
 	background-color: black;
 	width: 80%;
 	opacity: 0.85;
 	color: red;
-	padding-top: 10%;
 	border-radius: 20px;
 	border: inset grey 10px;
 	cursor: pointer;
-	z-index: 2;
+	padding:100px;
 }
 
 #start:hover {
@@ -33,21 +31,19 @@ body {
 
 #start > p {
 	background-color: inherit;
-	font-size: 55px;
+	font-size: 50px;
 }
 
 #grid {
 	display: grid;
-	grid: 150px / auto auto auto;
+	grid: 155px/ auto auto auto;
 	grid-gap: 10px;
-
 	background-color: grey;
 	width: 40%;
 	height: 500px;
 	float: left;
 	margin-left: 15%;
 	border: outset darkgrey 8px;
-	z-index: 2;
 }
 
 
@@ -57,10 +53,11 @@ body {
 	border: inset darkgrey;
 	cursor: pointer;
 	height: 155px;
-	width: 165px;
-    margin: 5px 0px;
-    font-size: 90px;
-    font-style: italic;
+	width: 100%;
+  margin: 5px 0px;
+  font-size: 350%;
+	font-style: italic;
+	contain: size;
 }
 
 /*.box:hover {
@@ -114,5 +111,48 @@ button:hover {
 	margin-bottom: 18px;
 	background: none;
 	font-size: 18px;
+
+}
+
+
+/*Responsive screen change settings*/
+@media only screen and (max-width: 750px) {
+
+#titlefx {
+		font-size: 35px;
+	}
+	
+	#start > p {
+		font-size: 25px;
+	}
+
+	#start {
+		padding: 50px;
+		margin-top: 25%;
+
+	}
+	#grid {
+		height: 300px;
+	}
+
+	.box {
+		height: 90px;
+		font-size: 200%;
+	}
+
+	#player-container {
+		padding:0;
+		margin: 0;
+	}
+
+	.player {
+		font-size: 12px;
+	}
+
+	#restart {
+		font-size: 12px;
+		height: 40px;
+		margin-left: 15px;;
+	}
 
 }
